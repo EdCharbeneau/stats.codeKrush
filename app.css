@@ -1,4 +1,5 @@
-﻿.k-button[disabled], .k-button.k-state-disabled:hover, .k-button.k-state-disabled:focus,
+﻿@import url(node_modules/bootstrap/dist/css/bootstrap-grid.css);
+.k-button[disabled], .k-button.k-state-disabled:hover, .k-button.k-state-disabled:focus,
 [disabled] .k-button {
   outline: none;
   cursor: default;
@@ -4923,14 +4924,6 @@ th.k-sorted {
   color: #ffffff;
   background-color: #ff6358; }
 
-/*
-    Wisp Grid Settings
-*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
 body {
   font-size: 16px;
   font-family: 'Rubik';
@@ -4949,40 +4942,37 @@ body {
   border-bottom-width: 10px;
   border-bottom-color: #3d3d3d; }
 
-.k-grid table tbody tr:nth-of-type(1) {
+.k-grid tr.rank-1 {
   color: white;
   background-color: #ff5412;
   font-size: 1.5em; }
 
-.k-grid table tbody tr:nth-of-type(2) {
+.k-grid tr.rank-2 {
   color: white;
   background-color: #ff804f;
   font-size: 1.2em; }
 
-.k-grid table tbody tr:nth-of-type(3) {
+.k-grid tr.rank-3 {
   color: white;
   background-color: #ffa582; }
 
-section {
-  margin: 0 auto;
-  max-width: 980px;
-  *zoom: 1; }
-  section:after {
-    content: "";
-    display: table;
-    clear: both; }
+td.rank {
+  text-align: center; }
 
 .header {
   text-align: center; }
-
-.side {
-  float: left;
-  padding: 0 24px;
-  width: 25%; }
 
 .t-logo {
   padding-bottom: 24px; }
 
 #grid {
   margin-bottom: 24px; }
+
+.kendoka {
+  background-image: url("/img/kendoka.png");
+  background-position-y: bottom;
+  background-repeat: no-repeat; }
+
+.ninja {
+  margin-left: -155px; }
 

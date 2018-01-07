@@ -1,4 +1,4 @@
-﻿@import "variables";
-@import "kendo.modules";
-@import "wisp";
-@import "theme-mod";
+﻿@import "variables"; // Colors and such
+@import "kendo.modules"; // Kendo UI widgets
+@import "../node_modules/bootstrap/dist/css/bootstrap-grid.css";
+@import "theme-mod"; // Custom Theme

@@ -3,49 +3,63 @@ body {
     font-family: 'Rubik';
     background-color: $base-bg;
     background-image: url("/img/background.png");
-    background-size:  contain;
+    background-size: contain;
     background-repeat: repeat-x;
     background-position: bottom;
 }
+
 .k-grid {
-    font-size:2em;
+    font-size: 2em;
 }
+
 .k-grid-header {
     background-color: #6eb641;
     color: $base-bg;
     border-bottom-width: 10px;
     border-bottom-color: $base-bg;
 }
-.k-grid table tbody tr:nth-of-type(1) {
-    color: white;
-    background-color: $accent;
-    font-size: 1.5em;
-}
-.k-grid table tbody tr:nth-of-type(2) {
-    color: white;
-    background-color: lighten($accent, 12);
-    font-size: 1.2em;
-}
-.k-grid table tbody tr:nth-of-type(3) {
-    color: white;
-    background-color: lighten($accent, 22);
+
+.k-grid  {
+    & tr.rank-1 {
+        color: white;
+        background-color: $accent;
+        font-size: 1.5em;
+    }
+
+    & tr.rank-2 {
+        color: white;
+        background-color: lighten($accent, 12);
+        font-size: 1.2em;
+    }
+
+    & tr.rank-3 {
+        color: white;
+        background-color: lighten($accent, 22);
+    }
 }
 
-section {
-    @include row;
+td.rank {
+    text-align: center;
 }
 
 .header {
-    text-align:center;
+    text-align: center;
 }
 
-.side {
-    @include column($one-quarter);
-}
 .t-logo {
     padding-bottom: 24px;
 }
 
 #grid {
-    margin-bottom:24px;
+    margin-bottom: 24px;
+}
+
+.kendoka {
+    background-image: url("/img/kendoka.png");
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.ninja {
+    margin-left: -155px;
 }
