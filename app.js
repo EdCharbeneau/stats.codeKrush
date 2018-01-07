@@ -23,13 +23,9 @@
     function initGrid() {
         $("#grid").kendoGrid({
             columns: [{ field: "rank", title: "RANK", width: "120px", attributes: { style: "text-align: center" } }, { field: "playerName", title: "PLAYER NAME" }, { field: "score", title: "SCORE" }],
+            pageable: { pageSize: 10 },
             rowTemplate: kendo.template($("#rowTemplate").html()),
-            altRowTemplate: kendo.template($("#altRowTemplate").html()),
-            scrollable: { virtual: true },
-            pageable: {
-                numeric: false,
-                previousNext: false
-            }
+            altRowTemplate: kendo.template($("#altRowTemplate").html())
         });
     };
 
