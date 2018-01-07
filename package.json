@@ -12,6 +12,7 @@
     "@progress/kendo-theme-default": "^2.46.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "@progress/kendo-theme-bootstrap": "^2.9.1",
+    "bootstrap": "^4.0.0-beta.2"
   }
 }

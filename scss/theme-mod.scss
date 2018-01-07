@@ -8,11 +8,17 @@ body {
     background-position: bottom;
 }
 
+.k-widget {
+    border: none;
+    border-width:0;
+}
+
 .k-grid {
     font-size: 2em;
 }
 
 .k-grid-header {
+    border-color: inherit;
     background-color: #6eb641;
     color: $base-bg;
     border-bottom-width: 10px;
